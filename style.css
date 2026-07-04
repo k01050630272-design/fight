@@ -1,0 +1,290 @@
+/* ===========================
+   FightForge Mobile v1.0
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#111;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:20px;
+
+}
+
+.app{
+
+    width:100%;
+
+    max-width:420px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#FFD700;
+
+    margin-bottom:20px;
+
+    font-size:34px;
+
+}
+
+.card{
+
+    background:#222;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    box-shadow:0 0 12px rgba(0,0,0,.35);
+
+}
+
+.red{
+
+    border-left:8px solid #ff4444;
+
+}
+
+.blue{
+
+    border-left:8px solid #3f8cff;
+
+}
+
+.card h2{
+
+    margin-bottom:12px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:12px;
+
+    margin-bottom:6px;
+
+    font-weight:bold;
+
+}
+
+select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+button:hover{
+
+    transform:scale(1.03);
+
+}
+
+button:active{
+
+    transform:scale(.97);
+
+}
+
+/* 경기 시작 */
+
+#startFight{
+
+    background:#28c840;
+
+    color:white;
+
+}
+
+/* 타이머 */
+
+#timer{
+
+    font-size:54px;
+
+    text-align:center;
+
+    margin:15px 0;
+
+    color:#FFD700;
+
+    font-weight:bold;
+
+}
+
+#timerBtn{
+
+    background:#FFD700;
+
+}
+
+/* RED */
+
+#redStyle,
+#redPerk{
+
+    font-size:24px;
+
+    text-align:center;
+
+    margin:10px 0;
+
+}
+
+/* BLUE */
+
+#blueStyle,
+#bluePerk{
+
+    font-size:24px;
+
+    text-align:center;
+
+    margin:10px 0;
+
+}
+
+/* 미션 */
+
+#mission{
+
+    font-size:24px;
+
+    text-align:center;
+
+    color:#7CFF7C;
+
+    min-height:60px;
+
+}
+
+/* 결과 버튼 */
+
+#redWin{
+
+    background:#d93a3a;
+
+    color:white;
+
+}
+
+#draw{
+
+    background:#777;
+
+    color:white;
+
+}
+
+#blueWin{
+
+    background:#297eff;
+
+    color:white;
+
+}/* ===========================
+   Mobile Optimization
+=========================== */
+
+html{
+    touch-action: manipulation;
+}
+
+body{
+    min-height:100vh;
+}
+
+button{
+
+    min-height:56px;
+
+    font-size:20px;
+
+}
+
+select{
+
+    min-height:50px;
+
+    font-size:18px;
+
+}
+
+.card{
+
+    margin-bottom:16px;
+
+}
+
+@media (max-width:430px){
+
+    .app{
+
+        padding:12px;
+
+    }
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+    #timer{
+
+        font-size:48px;
+
+    }
+
+}

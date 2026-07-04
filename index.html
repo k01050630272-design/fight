@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightForge Mobile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <h1>🥊 FightForge</h1>
+
+    <!-- 경기 설정 -->
+    <div class="card">
+
+        <label>경기 종류</label>
+
+<select id="mode">
+
+    <option value="mma">MMA</option>
+
+    <option value="boxing">복싱</option>
+
+    <option value="kickboxing">킥복싱</option>
+
+    <option value="grappling">그래플링</option>
+
+</select>
+
+        <button id="startFight">
+            🎲 경기 시작
+        </button>
+
+    </div>
+
+    <!-- RED -->
+    <div class="card red">
+
+        <h2>🔴 RED</h2>
+
+        <div id="redStyle">???</div>
+
+        <div id="redPerk">???</div>
+
+    </div>
+
+    <!-- BLUE -->
+    <div class="card blue">
+
+        <h2>🔵 BLUE</h2>
+
+        <div id="blueStyle">???</div>
+
+        <div id="bluePerk">???</div>
+
+    </div>
+
+    <!-- 미션 -->
+    <div class="card">
+
+        <h2>🎯 오늘의 미션</h2>
+
+        <div id="mission">
+            ???
+        </div>
+
+    </div>
+
+    <!-- 타이머 -->
+    <div class="card">
+
+        <h2>⏱ 라운드</h2>
+
+        <div id="timer">
+            03:00
+        </div>
+
+        <button id="timerBtn">
+            ▶ 시작
+        </button>
+
+    </div>
+
+    <!-- 결과 -->
+    <div class="card">
+
+        <h2>🏆 경기 종료</h2>
+
+        <button id="redWin">
+            🔴 RED WIN
+        </button>
+
+        <button id="draw">
+            🤝 DRAW
+        </button>
+
+        <button id="blueWin">
+            🔵 BLUE WIN
+        </button>
+
+    </div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
