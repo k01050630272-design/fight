@@ -43,3 +43,51 @@ startFight.addEventListener("click",()=>{
     mission.textContent = random(missions);
 
 });
+// =========================
+// 타이머
+// =========================
+
+const timer = document.getElementById("timer");
+const timerBtn = document.getElementById("timerBtn");
+
+let time = 180;
+let interval = null;
+
+function updateTimer(){
+
+    const min = String(Math.floor(time/60)).padStart(2,"0");
+    const sec = String(time%60).padStart(2,"0");
+
+    timer.textContent = `${min}:${sec}`;
+
+}
+
+timerBtn.addEventListener("click",()=>{
+
+    if(interval!==null) return;
+
+    timerBtn.textContent="⏸ 진행중";
+
+    interval = setInterval(()=>{
+
+        time--;
+
+        updateTimer();
+
+        if(time<=0){
+
+            clearInterval(interval);
+
+            interval=null;
+
+            timerBtn.textContent="✅ 종료";
+
+            alert("라운드 종료!");
+
+        }
+
+    },1000);
+
+});
+
+updateTimer();
